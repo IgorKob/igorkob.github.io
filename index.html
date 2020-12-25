@@ -160,6 +160,10 @@
       color: rgba(0, 0, 0);
     }
 
+    .card {
+      margin: 20px;
+    }
+
     .card-header {
       background-color: #fff;
     }
@@ -284,6 +288,9 @@
       width: 100%;
     }
 
+    .myMenuColor {
+      border-bottom: 3px solid rgb(26, 159, 197);
+    }
 
     /* media */
     @media (max-width: 991px) {
@@ -325,10 +332,10 @@
       <i class="fa fa-bars"></i>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <div class="collapse navbar-collapse justify-content-center myMenuColor" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#about" data-target="#collapsibleNavbar">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#experience">Experience</a>
@@ -455,9 +462,9 @@
               <h4>Edabit.com <span class="job-title"></span></h4>
             </div>
             <div class="card-content">
-              <p class="margin15">I practice coding JavaScript, performing tasks of varying complexity, earn XP and
+              <p class="margin15">I practice coding JavaScript, performing tasks of varying complexity and
                 improve my JavaScript level.</p>
-              <p><a href="https://edabit.com/user/DT44RfRiPRbpqoXWB" class="margin15 marginRight0">To view my JavaScript
+              <p><a href="https://edabit.com/user/DT44RfRiPRbpqoXWB" target="_blank" class="margin15 marginRight0">To view my JavaScript
                   skills, click here</a></p>
             </div>
           </div>
@@ -486,11 +493,12 @@
             <div class="project-content">
               <h4><b>React Google Books API</b></h4>
               <p>Unfinished demonstration project to improve skills</p>
+              <p>Using the Google Books API and semantic-ui-react, I created a site where you can search for books using various search filters. You can add found books to bookmarks stored in LocalStorage.</p>
               <p>Used: useEffect, useState, react-router-dom, React.lazy, Redux, Thunk, connect, compose, axios,
                 semantic-ui-react,
                 LocalStorage,...</p>
-              <a href="https://igorkob.github.io/React_GoogleBooksAPI_gh_pages">Link 1 - GitHub Pages</a>
-              <a href="https://github.com/IgorKob/React_GoogleBooksAPI_gh_pages/tree/master">Link 2 - GitHub
+              <a href="https://igorkob.github.io/React_GoogleBooksAPI_gh_pages" target="_blank">Link 1 - GitHub Pages</a>
+              <a href="https://github.com/IgorKob/React_GoogleBooksAPI_gh_pages/tree/master" target="_blank">Link 2 - GitHub
                 repository</a>
             </div>
           </div>
@@ -503,11 +511,9 @@
               <h4><b>React Social Network "samuraiJS API"</b></h4>
               <p>Unfinished demonstration project to improve skills </p>
               <p>Used: componentDidMount, react-router-dom, react-redux, redux-form, material-ui, axios...</p>
-              <p>Because the APIs are paid, unfortunately, the demo version only works on http://localhost:3000</p>
+              <p>Demo version only works on http://localhost:3000</p>
               <p>Test User <b>Email:</b> free@samuraijs.com <b>Password:</b> free</p>
-              <a href="https://igorkob.github.io/React_Social_Network_v1.0_gh-pages">Link 1 - GitHub Pages</a>
-              <a href="https://github.com/IgorKob/React_Social_Network_v1.0_gh-pages/tree/master">Link 2 - GitHub
-                repository</a>
+              <a href="https://github.com/IgorKob/React_Social_Network_v1.0_gh-pages/tree/master" target="_blank">Link 1 - GitHub repository</a>
             </div>
           </div>
           <!-- CARD #3 -->
@@ -518,12 +524,15 @@
             <div class="project-content">
               <h4><b>Wordpress - tShop.psd</b></h4>
               <p>Unfinished demonstration project to improve skills </p>
+              <p>Made an adaptive web design of web pages from PSD file, using
+                flexbox and sass, on such programs as Photoshop, Avocode.
+                Connected to WordPress, using storefront-child-theme to WooCommerce. Worked with advanced-custom-fields, contact-form-7...</p>
               <p>Used: gulp, scss, photoshop, avocode, wordpress, woocommerce, storefront-child-theme,
                 advanced-custom-fields,
                 art-woocommerce-custom-sale, currency-switcher-woocommerce, gtranslate, wishlist, MySQL...</p>
-              <a href="http://kobryn11.000webhostapp.com">Link 1 - to view a live demo, click here</a>
+              <a href="http://kobryn11.000webhostapp.com" target="_blank">Link 1 - to view a live demo, click here</a>
               <a
-                href="https://github.com/IgorKob/git/tree/master/practice/psd_tShop_scout_coala_avocode_PS/wp_tShop/storefront-child-QUANTUM">Link
+                href="https://github.com/IgorKob/git/tree/master/practice/psd_tShop_scout_coala_avocode_PS/wp_tShop/storefront-child-QUANTUM" target="_blank">Link
                 2 - GitHub repository</a>
             </div>
           </div>
@@ -535,9 +544,12 @@
             <div class="project-content">
               <h4><b>Wordpress - tOrange.psd</b></h4>
               <p>Unfinished demonstration project to improve skills </p>
+              <p>Made an adaptive web design of web pages from PSD file, using
+                flexbox and sass, on such programs as Photoshop, Avocode.
+                Connected to WordPress, using starter theme underscores.</p>
               <p>Used: photoshop, avocode, wordpress, starter theme underscores, MySQL...</p>
-              <a href="http://kobryn9.000webhostapp.com">Link 1 - to view a live demo, click here</a>
-              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_avocode_tOrange/wp_tOrange">Link 2 -
+              <a href="http://kobryn9.000webhostapp.com" target="_blank">Link 1 - to view a live demo, click here</a>
+              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_avocode_tOrange/wp_tOrange" target="_blank">Link 2 -
                 GitHub repository</a>
             </div>
           </div>
@@ -549,10 +561,13 @@
             <div class="project-content">
               <h4><b>Wordpress - tConsalt.psd</b></h4>
               <p>Unfinished demonstration project to improve skills </p>
+              <p>Made an adaptive web design of web pages from PSD file, using
+                flexbox and sass, on such programs as Photoshop, Avocode.
+                Connected to WordPress, using starter theme underscores. Worked with advanced-custom-fields, contact-form-7...</p>
               <p>Used: photoshop, avocode, wordpress, starter theme underscores, advanced-custom-fields, contact-form-7,
                 duplicator, MySQL...</p>
-              <a href="http://unparalleled-carbon.000webhostapp.com">Link 1 - to view a live demo, click here</a>
-              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_consalt/wp_consalt">Link 2 - GitHub
+              <a href="http://unparalleled-carbon.000webhostapp.com" target="_blank">Link 1 - to view a live demo, click here</a>
+              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_consalt/wp_consalt" target="_blank">Link 2 - GitHub
                 repository</a>
             </div>
           </div>
@@ -565,9 +580,11 @@
             <div class="project-content">
               <h4><b>Bootstrap - tPiroll.psd</b></h4>
               <p>Unfinished demonstration project to improve skills </p>
+              <p>Made an adaptive web design of web pages from PSD file, using
+                Bootstrap and sass, on Photoshop.</p>
               <p>Used: bootstrap, gulp, gulp-rigger, photoshop, scss...</p>
-              <a href="https://piroll.vercel.app/dist">Link 1 - to view a live demo, click here</a>
-              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_bootstrap_scss_gulp-rigger_tPiroll">Link
+              <a href="https://piroll.vercel.app/dist" target="_blank">Link 1 - to view a live demo, click here</a>
+              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_bootstrap_scss_gulp-rigger_tPiroll" target="_blank">Link
                 2 - GitHub repository</a>
             </div>
           </div>
@@ -579,9 +596,10 @@
             <div class="project-content">
               <h4><b>CSS grid - tAve.psd</b></h4>
               <p>Unfinished demonstration project to improve skills </p>
+              <p>Made an adaptive web design of web pages from PSD file, using grid layout and sass, on Photoshop.</p>
               <p>Used: grid, scss, gulp, gulp-rigger, photoshop...</p>
-              <a href="https://grid-ten.vercel.app/dist">Link 1 - to view a live demo, click here</a>
-              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_grid_scss_gulp-rigger_tAve">Link 2 -
+              <a href="https://grid-ten.vercel.app/dist" target="_blank">Link 1 - to view a live demo, click here</a>
+              <a href="https://github.com/IgorKob/git/tree/master/practice/psd_grid_scss_gulp-rigger_tAve" target="_blank">Link 2 -
                 GitHub repository</a>
             </div>
           </div>
@@ -593,9 +611,9 @@
             </div>
             <div class="project-content">
               <h4><b>And other projects in the GitHub repository</b></h4>
-              <a href="https://github.com/IgorKob/git/tree/master/practice">Link 1 - to view my other practical
+              <a href="https://github.com/IgorKob/git/tree/master/practice" target="_blank">Link 1 - to view my other practical
                 projects, click here</a>
-              <a href="https://github.com/IgorKob/git">Link 2 - GitHub repository, where I write down my study notes,
+              <a href="https://github.com/IgorKob/git" target="_blank">Link 2 - GitHub repository, where I write down my study notes,
                 click here</a>
             </div>
           </div>
@@ -758,7 +776,7 @@
         <div class="content-body">
           <p style="text-align: center"> Copyright &copy; <script>
               document.write(new Date().getFullYear())
-            </script> <a href="https://github.com/IgorKob">Igor Kobrynovych</a></p>
+            </script> <a href="https://github.com/IgorKob" target="_blank">Igor Kobrynovych</a></p>
         </div>
       </div>
       <div class="side-content"></div>
@@ -773,6 +791,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    const MobMenu = document.getElementsByClassName('collapse')[0];
+    MobMenu.addEventListener('click', () => {
+      MobMenu.classList.toggle('show');
+    })
+  </script>
 </body>
 
 </html>
